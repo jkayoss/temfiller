@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+<script data-ad-client="ca-pub-3403690637132237" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C2VV8EZBBW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C2VV8EZBBW');
+</script>
+    <meta charset="UTF-8"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEM FILLER? DESCUBRA SE O ANIME TEM FILLER</title>
+
+<meta name="description" content="O 'Tem filler?' foi criado pra ajuda-lo a identificar quais episódios do anime que você está assistindo é filler e quais não.">
+
+<meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="rules.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div id="logo">
+            <a href="/"><img src="/public/images/logo.png" alt=""></a>
+        </div>
+        <div id="menu">
+            <a href="../lista.html">LISTA DE ANIMES</a>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Animes</h1>
+        <ul id="animelist">
+
+        </ul>
+        <div class="card">
+            <p><strong>Algum anime não está na lista?</strong></p>
+            <p>Mande um e-mail para keepcalmcomkayo@gmail.com para que verifiquemos e adicionemos pra você!</p>
+        </div>
+    </main>  
+
+    <script type="module">
+        import { lista } from './data.js';
+
+        let animes = lista.sort(function(a, b) {
+            return a.name.localeCompare(b.name);
+        });
+
+        console.log(animes);
+
+        for (let i=0; i< animes.length; i++) {
+        
+        let animelist = document.querySelector('#animelist');
+        let item = document.createElement('li');
+        let link = document.createElement('a');
+        link.setAttribute('href', `/${animes[i]['link']}.html`);
+        link.innerHTML = animes[i]['name'];
+        item.appendChild(link);
+        animelist.appendChild(item);
+
+        }
+    </script>
+</body>
+</html>

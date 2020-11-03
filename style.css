@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+    background-color: #E5E5E5;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.card {
+    margin: 30px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #FCA311;
+    color: #000;
+    border: 3px dotted #14213D;
+    font-weight: 600;
+}
+
+.content {
+    min-height: 80vh;
+}
+
+footer {
+    width: 90%;
+    padding: 30px    5%;
+}
+
+.footer {
+    
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.5;
+    text-align: center;
+} .footer i {
+    font-size: 28px;
+    padding: 10px 5px;
+} .fa-linkedin {
+    color: rgb(51, 51, 196);
+}
+
+footer .footer p {
+    margin: 0;
+}
+
+ul li {
+    font-size: 18px;
+    list-style: none;
+    line-height: 1.5;
+    margin: 6px 0;
+    font-weight: 800;
+    padding: 0 10px;
+} ul {
+    margin-top: 20px;
+    text-decoration: none;
+} ul li a {
+    transition: 200ms;
+    
+} ul li a:hover {
+    border-bottom: 3px solid black;
+}
+
+nav {
+    background-color: #14213D;
+    padding: 10px 20px 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100% - calc(100% - 40px);
+} 
+
+#logo img {
+    height: 50px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    position: relative;
+    bottom: 2px;
+    text-align: right;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#canonep,
+#filler {
+    margin: 10px 0;
+    padding: 15px 15px;
+    border-radius: 8px;
+    font-size: 13px;
+    background-color: #fff;
+    box-shadow: 0 0 8px #c5c5c5;
+    font-weight: 600;
+}
+
+h2 {
+    font-weight: 800;
+    margin: 20px 0 0 20px;
+}
+
+.animelogo {
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+
+#animelogo {
+    max-width: 300px;
+}

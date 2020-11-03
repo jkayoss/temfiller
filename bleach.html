@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+<script data-ad-client="ca-pub-3403690637132237" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C2VV8EZBBW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C2VV8EZBBW');
+</script>
+    <meta charset="UTF-8"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEM FILLER? BLEACH</title>
+
+<meta name="description" content="O 'Tem filler?' foi criado pra ajuda-lo a identificar quais episódios do anime que você está assistindo é filler e quais não.">
+
+<meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="../rules.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <nav>
+        <div id="logo">
+            <a href="/"><img src="../public/images/logo.png" alt=""></a>
+        </div>
+        <div id="menu">
+            <a href="../lista.html">LISTA DE ANIMES</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="animelogo">
+            <img id="animelogo" alt="">
+        </div>
+
+        <h2>Episodios Canon</h2>
+        <div id="canonep">
+
+        </div>
+
+        <h2>Episodios Filler</h2>
+        <div id="filler">
+
+        </div>
+    </main>  
+
+    <script type="module">
+        import { bleach } from '../data.js';
+
+        let anime = document.querySelector('.animelogo img');
+
+        let logo = document.createAttribute('src');
+        logo.value  = bleach['src'];
+        anime.setAttributeNode(logo);
+
+        let filler = document.querySelector('#filler');
+
+        let fillers = document.createElement('p');
+        fillers.className = 'eps';
+        fillers.innerHTML = bleach['fillers'];
+        filler.appendChild(fillers);
+
+        let canonep = document.querySelector('#canonep');
+
+        let canon = document.createElement('p');
+        canon.className = 'eps';
+        canon.innerHTML = bleach['canon'];
+        canonep.appendChild(canon);
+    </script>
+</body>
+</html>

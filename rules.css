@@ -1,0 +1,40 @@
+@media (max-width: 480px) {
+    #logo img {
+        height: 30px!important;
+    }
+
+    nav a {
+        float: right;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    a.button button {
+        font-size: 20px;
+    }
+
+    ul li {
+        font-size: 20px!important;
+    }
+
+    main img {
+        width: 300px;
+    }
+    
+}
+
+@media (max-width: 340px) {
+    #animelogo {
+        max-width: 230px!important;
+    }
+}
